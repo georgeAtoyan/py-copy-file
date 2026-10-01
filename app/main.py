@@ -1,5 +1,5 @@
 def copy_file(command: str) -> None:
-    
+
     words = command.split()
 
     if len(words) != 3:
