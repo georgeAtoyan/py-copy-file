@@ -1,11 +1,11 @@
 def copy_file(command: str) -> None:
-
-    if "cp" not in command:
-        return
-
+    
     words = command.split()
 
     if len(words) != 3:
+        return
+
+    if words[0] != "cp":
         return
 
     command = words[0]
